@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace OOP5
 {
-    interface IPress
+    class Printer
     {
-        
-
+        public static void IAmPrinting(Person someone)
+        {
+            Console.WriteLine(someone.ToString());
+        }
     }
 }

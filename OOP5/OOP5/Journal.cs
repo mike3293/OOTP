@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP5
 {
-    class Journal:Press
+    class Journal:Press, IRustling
     {
 
         public Journal(string title, Author author, Publisher publisher, int number) : base(title, author, publisher)
@@ -16,6 +16,11 @@ namespace OOP5
 
         public int Number { get; set; }
 
+
+        public void rustle()
+        {
+            Console.WriteLine("Шуршит как журнал");
+        }
 
     }
 }

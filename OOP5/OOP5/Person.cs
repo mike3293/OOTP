@@ -20,5 +20,7 @@ namespace OOP5
         {
             return "Person: " + Name + ", Age: " + Age;
         }
+
+        public abstract void write();
     }
 }

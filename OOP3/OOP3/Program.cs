@@ -206,7 +206,7 @@ namespace TableNS
             Array.Resize(ref items, items.Count() - 1);
         }
 
-        public IEnumerable<T> getItems()
+        public T[] getItems()
         {
             return items;
         }

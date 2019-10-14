@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP5
 {
-    class Book : Press
+    class Book : Press, IRustling
     {
         public Book(string title, Author author, Publisher publisher, string genre) : base(title, author, publisher)
         {
@@ -15,5 +15,9 @@ namespace OOP5
 
         public string Genre { get; set; }
 
+        public void rustle()
+        {
+            Console.WriteLine("Шуршит как книга");
+        }
     }
 }
