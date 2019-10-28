@@ -47,7 +47,7 @@ namespace OOP8
                 list.Add(77);
                 list.Show();
 
-                Workbook a = new Workbook("Jo", "Marley", "'book one'");
+                Workbook a = new Workbook("Jo", "Марлей", "'book one'");
                 Workbook b = new Workbook("Go", "Barley", "'book two'");
                 CollectionType<Workbook> wb1 = new CollectionType<Workbook>();
                 CollectionType<Workbook> wb2 = new CollectionType<Workbook>();
