@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{84884E5D-D758-4898-8329-D6238AF336AC}</ProjectGuid>
+    <ProjectGuid>{FB7A62DC-A0B9-4A42-9698-2CFEE421E971}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OOP11</RootNamespace>
-    <AssemblyName>OOP11</AssemblyName>
+    <RootNamespace>OOP13</RootNamespace>
+    <AssemblyName>OOP13</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,7 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Matrix.cs" />
+    <Compile Include="GMPDirInfo.cs" />
+    <Compile Include="GMPDiskInfo.cs" />
+    <Compile Include="GMPFileInfo.cs" />
+    <Compile Include="GMPFileManager.cs" />
+    <Compile Include="GMPLog.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{84884E5D-D758-4898-8329-D6238AF336AC}</ProjectGuid>
+    <ProjectGuid>{7025789C-1A75-4A8E-B28F-07E77B0EBF05}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OOP11</RootNamespace>
-    <AssemblyName>OOP11</AssemblyName>
+    <RootNamespace>OOP15</RootNamespace>
+    <AssemblyName>OOP15</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Matrix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

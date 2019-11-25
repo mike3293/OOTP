@@ -25,12 +25,12 @@ namespace OOP9
         public void ToAtt()    //метод, инициирующий событие
         {
             Console.WriteLine(this.name + ", you have been attacked.");
-            Attack?.Invoke(this, new ActArgs(this.health));//вызов события, если не null
+            Attack.Invoke(this, new ActArgs(this.health));//вызов события, если не null
         }
         public void ToTr()
         {
             Console.WriteLine(this.name + ", you have been treated.");
-            Treatment?.Invoke(this, new ActArgs(this.health));
+            Treatment.Invoke(this, new ActArgs(this.health));
         }
     }
 

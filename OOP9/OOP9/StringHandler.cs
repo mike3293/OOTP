@@ -8,10 +8,7 @@ namespace OOP9
 {
     public static class StringHandler
     {
-        //2. Создайте пять методов пользовательской обработки строки (например, удаление знаков препинания, добавление символов, замена на заглавные,
-        //удаление лишних пробелов и т.п.). Используя стандартные типы делегатов (Action, Func) организуйте алгоритм последовательной обработки строки
-        //написанными вами методами.
-        public static string RemoveS(string str, Func<string, string> test1) => test1(str);      //удаление знаков
+        internal static string RemoveS(string str, Program.test_delegate test_delegate) => test_delegate(str);      //удаление знаков
         public static void AddToString(string str, Action<string> test2) => test2(str);                 //добавление строки
         public static string RemoveSpase(string str, Func<string, string> test3) => test3(str);   //удаление пробелов
         public static string Upper(string str, Func<string, string> test4) => test4(str);        //в верхний регистр

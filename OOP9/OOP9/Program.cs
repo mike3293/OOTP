@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP9
 {
-
-    class Program
+    internal class Program
     {
         private static void User_Treatment(object sender, ActArgs e)
         {
@@ -19,7 +18,9 @@ namespace OOP9
             e.ToAttack();   //обработчик события
         }
 
-        static void Main(string[] args)
+        public delegate string test_delegate(string str);  //встроенный делегат, второй параметр - возврат 
+
+        private static void Main(string[] args)
         {
             Console.WriteLine("------------------Game------------------");
             Game user1 = new Game("Tonny", 30);
@@ -41,12 +42,12 @@ namespace OOP9
 
             Console.WriteLine("\n\n--------------Работа со строками--------------");
             string str = "P! o, I          ?       .t 4";
-            Func<string, string> test1;  //встроенный делегат, второй параметр - возврат 
             Action<string> test2;       //не возвр значений
             Func<string, string> test3;
             Func<string, string> test4;
             Func<string, string> test5;
-            test1 = str1 => {  //блочное лямбда-выражение(упрощенная запись анонимных методов) 
+            string test(string str1)
+            {  //блочное лямбда-выражение(упрощенная запись анонимных методов) 
                 char[] sign = { '.', ',', '!', '?', '-', ':' };
                 for (int i = 0; i < str1.Length; i++)
                 {
@@ -58,9 +59,11 @@ namespace OOP9
                 Console.WriteLine(str1);
                 return str1;
             };
+            test_delegate tmp = null;
+            tmp += test;
             test2 = delegate (string str2)   //анонимный метод(безямынный блок кода)
             {
-                str2 += "+addsymbols";
+                str2 += " 2 part";
                 Console.WriteLine(str2);
             };
             test3 = str3 =>
@@ -84,7 +87,7 @@ namespace OOP9
             Console.WriteLine("Строка до: " + str);
             Console.WriteLine("Строки после: ");
             string s1, s2, s3;
-            s1 = StringHandler.RemoveS(str, test1);
+            s1 = StringHandler.RemoveS(str, tmp);
             StringHandler.AddToString(s1, test2);
             s2 = StringHandler.RemoveSpase(s1, test3);
             s3 = StringHandler.Upper(s2, test4);
@@ -92,6 +95,6 @@ namespace OOP9
 
             Console.ReadKey();
         }
-        
+
     }
 }

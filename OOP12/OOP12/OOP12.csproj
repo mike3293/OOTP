@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{84884E5D-D758-4898-8329-D6238AF336AC}</ProjectGuid>
+    <ProjectGuid>{E218144E-5331-48A1-BD15-C96C5E070AF7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OOP11</RootNamespace>
-    <AssemblyName>OOP11</AssemblyName>
+    <RootNamespace>OOP12</RootNamespace>
+    <AssemblyName>OOP12</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Matrix.cs" />
+    <Compile Include="MyClasses\Author.cs" />
+    <Compile Include="MyClasses\Book.cs" />
+    <Compile Include="MyClasses\IRustling.cs" />
+    <Compile Include="MyClasses\IWrite.cs" />
+    <Compile Include="MyClasses\Journal.cs" />
+    <Compile Include="MyClasses\Person.cs" />
+    <Compile Include="MyClasses\Press.cs" />
+    <Compile Include="MyClasses\Publisher.cs" />
+    <Compile Include="MyClasses\SchoolBook.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
