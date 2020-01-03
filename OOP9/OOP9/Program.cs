@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP9
 {
@@ -18,7 +15,7 @@ namespace OOP9
             e.ToAttack();   //обработчик события
         }
 
-        public delegate string test_delegate(string str);  //встроенный делегат, второй параметр - возврат 
+        public delegate string test_delegate(string str);
 
         private static void Main(string[] args)
         {
@@ -47,7 +44,7 @@ namespace OOP9
             Func<string, string> test4;
             Func<string, string> test5;
             string test(string str1)
-            {  //блочное лямбда-выражение(упрощенная запись анонимных методов) 
+            {
                 char[] sign = { '.', ',', '!', '?', '-', ':' };
                 for (int i = 0; i < str1.Length; i++)
                 {

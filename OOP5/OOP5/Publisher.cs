@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOP5
+﻿namespace OOP5
 {
-    class Publisher
+    internal class Publisher
     {
         public Publisher(string name, Press[] press, Author[] authors)
         {

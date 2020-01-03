@@ -25,7 +25,7 @@ namespace OOP4
 
         public class Date
         {
-            DateTime dateTime = DateTime.Now;
+            private DateTime dateTime = DateTime.Now;
 
             public override string ToString()
             {
@@ -51,12 +51,17 @@ namespace OOP4
             bool flag = true;
 
             if (a.Count != b.Count)
+            {
                 return false;
+            }
             else
             {
                 for (int i = 0; i < a.Count; i++)
                 {
-                    if (a[i] != b[i]) flag = false;
+                    if (a[i] != b[i])
+                    {
+                        flag = false;
+                    }
                 }
                 return flag;
             }
@@ -67,12 +72,17 @@ namespace OOP4
             bool flag = true;
 
             if (a.Count != b.Count)
+            {
                 return true;
+            }
             else
             {
                 for (int i = 0; i < a.Count; i++)
                 {
-                    if (a[i] != b[i]) flag = false;
+                    if (a[i] != b[i])
+                    {
+                        flag = false;
+                    }
                 }
                 return !flag;
             }

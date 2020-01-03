@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
 
-namespace OOP5
+namespace OOP_5_6_7
 {
     struct Information
     {
@@ -21,7 +21,6 @@ namespace OOP5
     {
         static void Main(string[] args)
         {
-
             Author author1 = new Author("Влад", 13, new Book[0]);
             Author author2 = new Author("Влад2", 14, new Book[0]);
             Printer.IAmPrinting(author1);
@@ -86,14 +85,14 @@ namespace OOP5
                 
 
                 int a = 0;
-                int b = 4/a;  
+                //int b = 4/a;  
 
-                library.Show();
+                library.Show();     // incorrect password
 
-                //Author author0 = new Author("", 13, new Book[0]);
+                //Author author0 = new Author("", 13, new Book[0]);     // No name author
 
                 Library libraryEx = new Library();
-                //libraryEx.Show();
+                // libraryEx.Show();       // No items
             }
             catch (EmptyException exception)
             {
@@ -109,10 +108,10 @@ namespace OOP5
             }
             catch (DivideByZeroException exception)
             {
-                throw exception;
                 Console.WriteLine(exception.Message);
                 Console.WriteLine(exception.StackTrace);
                 Console.WriteLine(exception.TargetSite);
+                throw;
             }
             catch
             {

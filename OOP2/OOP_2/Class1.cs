@@ -23,7 +23,7 @@ namespace OOP_2
 
                 public void Dispose()
                 {
-
+                    Console.Write("dispose");
                 }
             }
             static void Main(string[] args)
@@ -95,14 +95,14 @@ namespace OOP_2
                     return (a * a);
                 }
 
-                Console.WriteLine(string.Format($"Checked: {chF(check)}"));
+                Console.WriteLine(string.Format($"Checked: {unchF(check)}"));
 
                 using (Example tmp = new Example(10))
                 {
                     Console.WriteLine(tmp.GetState());
                 }
 
-                    int x = Console.Read();
+                Console.Read();
             }
         }
     }

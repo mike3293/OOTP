@@ -1,31 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 
 
 namespace OOP14
 {
-    [Serializable]  //объект доступен для служб сериализации
+    [Serializable]
     public abstract class Author
     {
         protected string firstName;
         protected string lastName;
-        
+
         public string FirstName
         {
             get => firstName;
             set => firstName = value;
         }
-        
+
         public string LastName
         {
             get => lastName;
             set => lastName = value;
         }
-  
+
     }
 
     [Serializable]
@@ -45,7 +40,7 @@ namespace OOP14
             lastName = sname;
             this.nameOfW = nameOfW;
         }
-       
+
         public string NameOfW
         {
             get => nameOfW;

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP11
 {
@@ -11,16 +7,18 @@ namespace OOP11
         public int[,] matrix;
         public int n;
         public string Name { get; set; }
-        static public Random rand = new Random();
+        public static Random rand = new Random();
         public Matrix(int n, string name)
         {
             Name = name;
             this.n = n;
             matrix = new int[n, n];
             for (int i = 0; i < n; i++)
-                for (int j = 0; j < n; j++)
             {
-                matrix[i,j] = rand.Next(0, 3);
+                for (int j = 0; j < n; j++)
+                {
+                    matrix[i, j] = rand.Next(0, 3);
+                }
             }
         }
 

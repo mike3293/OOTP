@@ -1,0 +1,32 @@
+OOP5.Author - Method - get_Press
+
+OOP5.Author - Method - set_Press
+
+OOP5.Author - Method - ToString
+
+OOP5.Author - Method - write
+
+OOP5.Author - Method - PersonSay
+
+OOP5.Person - Method - get_Name
+
+OOP5.Person - Method - set_Name
+
+OOP5.Person - Method - get_Age
+
+OOP5.Person - Method - set_Age
+
+System.Object - Method - Equals
+
+System.Object - Method - GetHashCode
+
+System.Object - Method - GetType
+
+OOP5.Author - Constructor - .ctor
+
+OOP5.Author - Property - Press
+
+OOP5.Person - Property - Name
+
+OOP5.Person - Property - Age
+

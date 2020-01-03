@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP5
 {
-    class Journal:Press, IRustling
+    internal class Journal : Press, IRustling
     {
 
         public Journal(string title, Author author, Publisher publisher, int number) : base(title, author, publisher)

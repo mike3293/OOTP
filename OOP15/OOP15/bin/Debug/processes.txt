@@ -1,0 +1,874 @@
+ID: 8144
+Name: chrome
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:47:31
+Total processor time: 00:00:17.5937500
+
+ID: 784
+Name: IAStorIcon
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:31:54
+Total processor time: 00:00:00.8437500
+
+ID: 3148
+Name: lkcitdl
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 13040
+Name: ServiceHub.DataWarehouseHost
+Priority: 8
+Responding: True
+Start at: 03.01.2020 20:47:20
+Total processor time: 00:00:26.6250000
+
+ID: 1176
+Name: WUDFHost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 3236
+Name: svchost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 1764
+Name: svchost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 2548
+Name: svchost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 4912
+Name: svchost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 6092
+Name: explorer
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:30:39
+Total processor time: 00:02:13.3750000
+
+ID: 3136
+Name: lktsrv
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 1860
+Name: svchost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 12196
+Name: ServiceHub.Host.CLR.x86
+Priority: 8
+Responding: True
+Start at: 03.01.2020 20:47:15
+Total processor time: 00:00:00.7031250
+
+ID: 572
+Name: svchost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 12608
+Name: StandardCollector.Service
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 5492
+Name: ShellExperienceHost
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:30:40
+Total processor time: 00:00:01.5312500
+
+ID: 2532
+Name: NvTelemetryContainer
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 532
+Name: ServiioService
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 2936
+Name: chrome
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:47:31
+Total processor time: 00:00:53.5468750
+
+ID: 840
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 15:33:03
+Total processor time: 00:00:03.1093750
+
+ID: 5860
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 20:13:26
+Total processor time: 00:00:00.2031250
+
+ID: 3116
+Name: nidmsrv
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 356
+Name: smss
+Priority: 11
+Responding: True
+NO ACESS FOR TIME
+
+ID: 3768
+Name: conhost
+Priority: 8
+Responding: True
+Start at: 03.01.2020 20:47:01
+Total processor time: 00:00:00.0468750
+
+ID: 7052
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 14:57:21
+Total processor time: 00:00:38.5468750
+
+ID: 9612
+Name: chrome
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:47:30
+Total processor time: 00:21:29.2656250
+
+ID: 3504
+Name: GWCtlSrv
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 548
+Name: csrss
+Priority: 13
+Responding: True
+NO ACESS FOR TIME
+
+ID: 872
+Name: svchost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 1728
+Name: NVDisplay.Container
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 9996
+Name: fontdrvhost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 2512
+Name: StarWindServiceAE
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 2708
+Name: WmiApSrv
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 576
+Name: svchost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 772
+Name: winlogon
+Priority: 13
+Responding: True
+NO ACESS FOR TIME
+
+ID: 9600
+Name: chrome
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:47:31
+Total processor time: 00:00:02.3906250
+
+ID: 3764
+Name: UltraMon
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:30:54
+Total processor time: 00:00:00.0468750
+
+ID: 1320
+Name: svchost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 7820
+Name: rundll32
+Priority: 8
+Responding: True
+Start at: 03.01.2020 11:11:06
+Total processor time: 00:00:00.0468750
+
+ID: 4204
+Name: Push2Run
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:30:54
+Total processor time: 00:00:21.4375000
+
+ID: 8276
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 12:55:51
+Total processor time: 00:00:57.0625000
+
+ID: 7736
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 10:47:38
+Total processor time: 00:01:27.3125000
+
+ID: 12544
+Name: ServiceHub.SettingsHost
+Priority: 8
+Responding: True
+Start at: 03.01.2020 20:47:09
+Total processor time: 00:00:02.0312500
+
+ID: 2692
+Name: dasHost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 1312
+Name: ServiceHub.Host.Node.x86
+Priority: 8
+Responding: True
+Start at: 03.01.2020 20:47:01
+Total processor time: 00:00:00.5000000
+
+ID: 4660
+Name: conhost
+Priority: 8
+Responding: True
+Start at: 03.01.2020 21:09:45
+Total processor time: 00:00:00.0156250
+
+ID: 2492
+Name: OfficeClickToRun
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 5840
+Name: taskhostw
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:30:39
+Total processor time: 00:00:02.3437500
+
+ID: 4460
+Name: nimdnsResponder
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 716
+Name: lsass
+Priority: 9
+Responding: True
+NO ACESS FOR TIME
+
+ID: 3276
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 19:24:43
+Total processor time: 00:02:00.8281250
+
+ID: 6228
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 16:59:17
+Total processor time: 00:04:40.2500000
+
+ID: 316
+Name: dwm
+Priority: 13
+Responding: True
+NO ACESS FOR TIME
+
+ID: 708
+Name: services
+Priority: 9
+Responding: True
+NO ACESS FOR TIME
+
+ID: 2480
+Name: jhi_service
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 2676
+Name: chrome
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:47:31
+Total processor time: 00:02:42.7187500
+
+ID: 1296
+Name: NVDisplay.Container
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 2280
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 15:20:18
+Total processor time: 00:01:25.4687500
+
+ID: 5768
+Name: chrome
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:47:31
+Total processor time: 00:06:19.1250000
+
+ID: 10576
+Name: SearchFilterHost
+Priority: 4
+Responding: True
+NO ACESS FOR TIME
+
+ID: 9172
+Name: chrome
+Priority: 10
+Responding: True
+Start at: 03.01.2020 10:47:31
+Total processor time: 00:28:52.9531250
+
+ID: 5624
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 20:13:21
+Total processor time: 00:03:18.7031250
+
+ID: 9152
+Name: conhost
+Priority: 8
+Responding: True
+Start at: 03.01.2020 21:09:45
+Total processor time: 00:00:00
+
+ID: 5228
+Name: conhost
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:31:28
+Total processor time: 00:00:00.0156250
+
+ID: 2468
+Name: mbbService
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 9936
+Name: chrome
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:47:46
+Total processor time: 00:04:08.3906250
+
+ID: 3128
+Name: ServiceHub.RoslynCodeAnalysisService32
+Priority: 6
+Responding: True
+Start at: 03.01.2020 20:47:03
+Total processor time: 00:00:04.0781250
+
+ID: 9556
+Name: conhost
+Priority: 8
+Responding: True
+Start at: 03.01.2020 21:19:29
+Total processor time: 00:00:00.0156250
+
+ID: 4432
+Name: StartupCheckingService
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 2460
+Name: SystemWebServer
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 4292
+Name: chrome
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:47:31
+Total processor time: 00:00:47.0781250
+
+ID: 4488
+Name: ApplicationWebServer
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 3048
+Name: UnrealCEFSubProcess
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:31:05
+Total processor time: 00:00:00.2031250
+
+ID: 10324
+Name: MSBuild
+Priority: 8
+Responding: True
+Start at: 03.01.2020 21:09:45
+Total processor time: 00:00:00.6406250
+
+ID: 4692
+Name: VBCSCompiler
+Priority: 8
+Responding: True
+Start at: 03.01.2020 21:09:45
+Total processor time: 00:00:03.7968750
+
+ID: 12696
+Name: ServiceHub.VSDetouredHost
+Priority: 8
+Responding: True
+Start at: 03.01.2020 20:47:02
+Total processor time: 00:00:03.7343750
+
+ID: 2648
+Name: svchost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 2844
+Name: wmpnetwk
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 9344
+Name: chrome
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:47:31
+Total processor time: 00:00:00.1093750
+
+ID: 4812
+Name: schedhlp
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:30:53
+Total processor time: 00:00:00.0312500
+
+ID: 4220
+Name: GWIdlMon
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:31:28
+Total processor time: 00:00:01.2656250
+
+ID: 8656
+Name: ScriptedSandbox64
+Priority: 8
+Responding: True
+Start at: 03.01.2020 21:19:29
+Total processor time: 00:00:00.6250000
+
+ID: 6384
+Name: RAVCpl64
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:30:51
+Total processor time: 00:00:00.1875000
+
+ID: 5988
+Name: WINWORD
+Priority: 8
+Responding: True
+Start at: 03.01.2020 15:22:57
+Total processor time: 00:00:05.4843750
+
+ID: 1988
+Name: ServiceHub.IdentityHost
+Priority: 8
+Responding: True
+Start at: 03.01.2020 20:47:04
+Total processor time: 00:00:00.7500000
+
+ID: 5788
+Name: svchost
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:30:39
+Total processor time: 00:00:00.1562500
+
+ID: 5196
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 10:47:44
+Total processor time: 00:08:04.1562500
+
+ID: 3028
+Name: LMIGuardianSvc
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 12528
+Name: WmiPrvSE
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 5780
+Name: sihost
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:30:39
+Total processor time: 00:00:00.8125000
+
+ID: 1248
+Name: EpicGamesLauncher
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:30:54
+Total processor time: 00:00:57
+
+ID: 10900
+Name: PerfWatson2
+Priority: 8
+Responding: True
+Start at: 03.01.2020 20:47:01
+Total processor time: 00:00:02.1093750
+
+ID: 5180
+Name: SearchUI
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:30:41
+Total processor time: 00:00:00.4375000
+
+ID: 10104
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 16:54:31
+Total processor time: 00:00:42.4375000
+
+ID: 5948
+Name: WUDFHost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 1040
+Name: svchost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 10856
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 11:47:13
+Total processor time: 00:00:19.3437500
+
+ID: 1432
+Name: svchost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 7144
+Name: LMS
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 9112
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 14:36:33
+Total processor time: 00:05:15.4531250
+
+ID: 2220
+Name: schedul2
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 1032
+Name: svchost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 2136
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 19:27:04
+Total processor time: 00:01:05.2656250
+
+ID: 636
+Name: wininit
+Priority: 13
+Responding: True
+NO ACESS FOR TIME
+
+ID: 2408
+Name: lkads
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 5756
+Name: chrome
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:47:35
+Total processor time: 00:00:26.4218750
+
+ID: 10804
+Name: WINWORD
+Priority: 8
+Responding: True
+Start at: 03.01.2020 15:22:56
+Total processor time: 00:00:04.1406250
+
+ID: 2208
+Name: AxAHCIServiceEx
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 7920
+Name: chrome
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:47:31
+Total processor time: 00:00:00.0312500
+
+ID: 10480
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 16:54:31
+Total processor time: 00:00:25.7031250
+
+ID: 2008
+Name: spoolsv
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 6536
+Name: SearchIndexer
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 8692
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 13:00:48
+Total processor time: 00:01:29.0625000
+
+ID: 940
+Name: svchost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 2592
+Name: ServiioService
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 13032
+Name: SearchProtocolHost
+Priority: 4
+Responding: True
+NO ACESS FOR TIME
+
+ID: 2196
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 19:27:17
+Total processor time: 00:00:00.6406250
+
+ID: 10272
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 13:00:56
+Total processor time: 00:00:07.6875000
+
+ID: 9680
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 13:00:44
+Total processor time: 00:01:54.8906250
+
+ID: 644
+Name: csrss
+Priority: 13
+Responding: True
+NO ACESS FOR TIME
+
+ID: 1068
+Name: IAStorDataMgrSvc
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 2584
+Name: sqlwriter
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 6784
+Name: OOP15
+Priority: 8
+Responding: True
+Start at: 03.01.2020 21:19:29
+Total processor time: 00:00:00.1875000
+
+ID: 2188
+Name: hamachi-2
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 5140
+Name: RuntimeBroker
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:30:40
+Total processor time: 00:00:04.2343750
+
+ID: 5008
+Name: chrome
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:47:31
+Total processor time: 00:00:08.8281250
+
+ID: 2772
+Name: Memory Compression
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 10060
+Name: chrome
+Priority: 8
+Responding: True
+Start at: 03.01.2020 10:47:31
+Total processor time: 00:01:36.6562500
+
+ID: 6904
+Name: devenv
+Priority: 8
+Responding: True
+Start at: 03.01.2020 20:47:00
+Total processor time: 00:02:28.3906250
+
+ID: 2568
+Name: Locator
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 2356
+Name: svchost
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 4
+Name: System
+Priority: 8
+Responding: True
+NO ACESS FOR TIME
+
+ID: 9960
+Name: chrome
+Priority: 4
+Responding: True
+Start at: 03.01.2020 10:47:31
+Total processor time: 00:01:09.4218750
+
+ID: 0
+Name: Idle
+Priority: 0
+Responding: True
+NO ACESS FOR TIME
+

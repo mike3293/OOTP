@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace OOP5
+﻿namespace OOP_5_6
 {
     public partial class Press
     {

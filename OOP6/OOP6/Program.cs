@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace OOP5
+namespace OOP_5_6
 {
     struct Information
     {
@@ -20,15 +16,12 @@ namespace OOP5
     {
         static void Main(string[] args)
         {
-
             Author author1 = new Author("Влад", 13, new Book[0]);
             Author author2 = new Author("Влад2", 14, new Book[0]);
             Printer.IAmPrinting(author1);
             author1.write();
             IWrite authorX = new Author("Влад2", 14, new Book[0]);
             authorX.write();
-
-
 
             Author[] authArr = { author1, author2 };
             Console.WriteLine(author1);

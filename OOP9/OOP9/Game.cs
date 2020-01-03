@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP9
 {
@@ -24,41 +20,41 @@ namespace OOP9
         public event EventHandler<ActArgs> Treatment;
         public void ToAtt()    //метод, инициирующий событие
         {
-            Console.WriteLine(this.name + ", you have been attacked.");
-            Attack.Invoke(this, new ActArgs(this.health));//вызов события, если не null
+            Console.WriteLine(name + ", you have been attacked.");
+            Attack?.Invoke(this, new ActArgs(health));   //вызов события, если не null
         }
         public void ToTr()
         {
-            Console.WriteLine(this.name + ", you have been treated.");
-            Treatment.Invoke(this, new ActArgs(this.health));
+            Console.WriteLine(name + ", you have been treated.");
+            Treatment?.Invoke(this, new ActArgs(health));
         }
     }
 
     public class ActArgs : EventArgs  //класс, содержащий инф. о событиях
     {
-        int h;
+        private int _h;
         public ActArgs(int h)
         {
-            this.h = h;
+            _h = h;
         }
         public void ToAttack()  //метод-обработчик события
         {
-            int heal = h;
-            h -= 10;
-            if (h <= 0)
+            int heal = _h;
+            _h -= 10;
+            if (_h <= 0)
             {
                 Console.WriteLine("You are dead (*o*)");
             }
             else
             {
-                Console.WriteLine("Health level dropped from {0} to {1}!", heal, h);
+                Console.WriteLine("Health level dropped from {0} to {1}!", heal, _h);
             }
         }
         public void ToTreat()
         {
-            h += 20;
-            if (h > 100) { h = 100; }
-            Console.WriteLine("Now the level of health is {0}.", h);
+            _h += 20;
+            if (_h > 100) { _h = 100; }
+            Console.WriteLine("Now the level of health is {0}.", _h);
         }
     }
 }

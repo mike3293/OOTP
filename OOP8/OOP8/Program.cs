@@ -1,21 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP8
 {
-    struct Workbook
+    internal struct Workbook
     {
         public string firstName;
         public string lastName;
         public string Title;
-        public Workbook(string name, string sname, string Title)
+        public Workbook(string name, string sname, string title)
         {
-            this.firstName = name;
-            this.lastName = sname;
-            this.Title = Title;
+            firstName = name;
+            lastName = sname;
+            Title = title;
         }
         public void Info()
         {
@@ -26,10 +22,10 @@ namespace OOP8
             return "The author of " + Title + " is " + firstName + " " + lastName + ".";
         }
     }
-    //Добавьте обработку исключений с finally.
-    class Program
+
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             try
             {

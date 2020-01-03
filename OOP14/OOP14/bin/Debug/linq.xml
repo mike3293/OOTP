@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <bookstore name="OZ">
+    <country>BY</country>
+    <city>Minsk</city>
+  </bookstore>
+  <bookstore name="XLMedia">
+    <country>RU</country>
+    <city>Moscow</city>
+  </bookstore>
+</root>

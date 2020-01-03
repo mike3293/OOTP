@@ -6,9 +6,9 @@ namespace OOP15
 {
     internal static class TwoThreads
     {
-        public static void Consistently()                           //сначала чет, потом нечет
+        public static void Consistently()                          
         {
-            object locker = new object();                           //объект-заглушка
+            object locker = new object();                          
             if (File.Exists("ch_nech.txt"))
             {
                 File.Delete("ch_nech.txt");
@@ -16,14 +16,14 @@ namespace OOP15
             Thread CheT = new Thread(new ThreadStart(Chet));
             Thread NecheT = new Thread(new ThreadStart(Nechet))
             {
-                Priority = ThreadPriority.AboveNormal           //поменяли приоритет
+                Priority = ThreadPriority.AboveNormal
             };
             CheT.Start();
             NecheT.Start();
 
             void Chet()
             {
-                lock (locker)                   //блокирует блок кода до завершения работы текущего потока
+                lock (locker)             
                 {
                     for (int i = 0; i < 10; i++)
                     {
@@ -63,7 +63,7 @@ namespace OOP15
 
 
 
-        public static void OneByOne()                           //чередуясь
+        public static void OneByOne()
         {
             Mutex mutex = new Mutex();
             if (File.Exists("ch_n_ch.txt"))
@@ -79,14 +79,14 @@ namespace OOP15
             {
                 for (int i = 0; i < 10; i++)
                 {
-                    mutex.WaitOne();            //точка входа в критическую секцию для нескольких процессов    
-                    if (i % 2 == 0)             //критич секция - участок прог-мы с общим ресурсом
-                    {                                     //приостанавливает вып потока, пока не будет получен мьютекс
+                    mutex.WaitOne();   
+                    if (i % 2 == 0)
+                    {
                         Console.WriteLine(i + " ch");
                         WriteResultToFile(i);
                         Thread.Sleep(300);
                     }
-                    mutex.ReleaseMutex();       //выход, поток освобождает мьютекс
+                    mutex.ReleaseMutex(); 
                 }
             }
             void Nechet()

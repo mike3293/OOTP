@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Diagnostics;
 
 namespace OOP16
 {
@@ -17,7 +14,7 @@ namespace OOP16
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
             Vector vector = new Vector(size);
-            Task task = Task.Factory.StartNew(() => vector = vector * num); // Выполнить сразу
+            Task task = Task.Factory.StartNew(() => vector = vector * num);
             //1) Выведите идентификатор текущей задачи, проверьте во время выполнения – завершена ли задача и выведите ее статус. 
             Console.WriteLine("ID: " + task.Id + "\nStatus: " + task.Status);
             task.Wait();
@@ -35,7 +32,7 @@ namespace OOP16
             task.Start();
             cancellationToken.Cancel(); //отменяем задачи
             Thread.Sleep(500);
-            Console.WriteLine("Status: " + task.Status);
+            Console.WriteLine("\nStatus: " + task.Status);
         }
 
         //3.Создайте три задачи с возвратом результата и используйте их для выполнения четвертой задачи. Например, расчет по формуле.

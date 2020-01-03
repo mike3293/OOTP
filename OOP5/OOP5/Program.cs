@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP5
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            
+            // Лаба с иерархией
 
             Author author1 = new Author("Влад", 13, new Book[0]);
             Author author2 = new Author("Влад2", 14, new Book[0]);
@@ -37,11 +33,13 @@ namespace OOP5
             Printer.IAmPrinting(author1);
 
             if ((book1 as SchoolBook) == null)
+            {
                 Console.WriteLine("book1 as SchoolBook == null");
+            }
 
             Console.ReadKey();
         }
 
-        
+
     }
 }

@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace OOP15
 {
@@ -42,14 +38,13 @@ namespace OOP15
                 //время запуска, текущее состояние, сколько всего времени использовал процессор и т.д.
                 using (StreamWriter sw = new StreamWriter("processes.txt"))
                 {
-                    Process[] allProcesses = Process.GetProcesses();    //получение всех процессов
-                    foreach (Process p in allProcesses)          //при запуске приложения ОС создает для него процесс,
-                    {                                           //которому выделяется определенное адр пр-во в памяти
-
+                    Process[] allProcesses = Process.GetProcesses();    
+                    foreach (Process p in allProcesses)         
+                    {                                          
                         sw.WriteLine("ID: " + p.Id);
                         sw.WriteLine("Name: " + p.ProcessName);
                         sw.WriteLine("Priority: " + p.BasePriority);
-                        sw.WriteLine("Responding: " + p.Responding);        //отвечает ли пользовательский интерфейс
+                        sw.WriteLine("Responding: " + p.Responding);        
                         try
                         {
                             sw.WriteLine("Start at: " + p.StartTime);             //отсутствие доступа
@@ -65,7 +60,7 @@ namespace OOP15
 
 
                 //2. Исследуйте текущий домен вашего приложения: имя, детали конфигурации, все сборки, загруженные в домен.
-                AppDomain domain = AppDomain.CurrentDomain;               //домен приложения - отдельный логический раздел внутри процесса
+                AppDomain domain = AppDomain.CurrentDomain;
                 Console.WriteLine("Current domain");
                 Console.WriteLine("Name: " + domain.FriendlyName);
                 Console.WriteLine("Configuration: " + domain.SetupInformation);
@@ -95,9 +90,9 @@ namespace OOP15
                 //и записи в файл и на консоль простых чисел от 1 до n(задает пользователь).
                 //Вызовите методы управления потоком(запуск, приостановка, возобновление и тд.) 
                 //Во время выполнения выведите информацию о статусе потока, имени, приоритете, числовой идентификатор и т.д.
-                Console.WriteLine("Threads");                         //поток - используемый внутри процесса путь выполнения
-                Thread thread = new Thread(ToWriteNum);                 //процесс содержит мин один поток - главный
-                thread.Start();                                         //из главного - вторичные
+                Console.WriteLine("Threads");                         
+                Thread thread = new Thread(new ThreadStart(ToWriteNum));                 
+                thread.Start();                                         
                 thread.Name = "MyThread01";
                 Thread.Sleep(2000);
                 thread.Suspend();
@@ -132,9 +127,8 @@ namespace OOP15
 
 
                 //5. Придумайте и реализуйте повторяющуюся задачу на основе класса Timer
-                TimerCallback tm = new TimerCallback(Count);    //метод обратного вызова
-                //таймер - запускает опред действия по истечению некоторого периода времени
-                Timer timer = new Timer(tm, null, 500, 1000); //метод, объект для передачи в метод, мс через кот таймер запускается, интервал между вызовами метода
+                TimerCallback tm = new TimerCallback(Count);
+                Timer timer = new Timer(tm, null, 500, 1000);
                 Thread.Sleep(5000);
                 Console.WriteLine("Time is over...");
                 timer.Dispose();

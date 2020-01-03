@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP12
 {
@@ -48,9 +46,9 @@ namespace OOP12
             {
                 Console.WriteLine(field.Name + " - " + field.FieldType);
             }
-            foreach (PropertyInfo prorertie in type.GetProperties())
+            foreach (PropertyInfo prop in type.GetProperties())
             {
-                Console.WriteLine(prorertie.Name + " - " + prorertie.PropertyType);
+                Console.WriteLine(prop.Name + " - " + prop.PropertyType);
             }
         }
 
@@ -81,8 +79,7 @@ namespace OOP12
             object[] str = { sr.ReadLine() };
 
             MethodInfo currentMethodInfo = type.GetMethod(method);
-            currentMethodInfo.Invoke(null, str);   //вызываем метод экземпляра test с параметром obj1
-            //Console.WriteLine(result);
+            currentMethodInfo.Invoke(null, str);   //вызываем метод
         }
     }
 }

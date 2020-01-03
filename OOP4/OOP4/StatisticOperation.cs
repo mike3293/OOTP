@@ -26,10 +26,14 @@ namespace OOP4
             foreach (string item in list)
             {
                 if (item.Length < min)
+                {
                     min = item.Length;
+                }
 
                 if (item.Length > max)
+                {
                     max = item.Length;
+                }
             }
             return max - min;
         }
@@ -38,7 +42,10 @@ namespace OOP4
         {
             int counter = 0;
             foreach (string item in list)
+            {
                 counter++;
+            }
+
             return counter;
         }
 

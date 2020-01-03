@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace OOP16
@@ -20,6 +17,8 @@ namespace OOP16
             for (int i = 0; i < 10000; i++)
             {
                 Generate();    //обычный цикл
+                Vector vec = new Vector(10000);
+                vec[0] += 1;
             }
             stopwatch.Stop();
             Console.WriteLine("\nFor:\nCommon cycle: " + stopwatch.Elapsed);
@@ -59,6 +58,8 @@ namespace OOP16
         public static void GenerateParallel(int n)
         {
             _result += 1;
+            Vector vec = new Vector(10000);
+            vec[0] += 1;
         }
 
         public static void CheckForEach(int n)
@@ -67,7 +68,7 @@ namespace OOP16
         }
 
         //6.Используя Parallel.Invoke() распараллельте выполнение блока операторов.
-        public static void ParallelInvoke(int n)
+        public static void ParallelInvoke()
         {
             Parallel.Invoke(
                 For,

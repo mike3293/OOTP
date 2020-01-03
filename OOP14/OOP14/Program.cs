@@ -6,8 +6,6 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization.Formatters.Soap;
 using System.Runtime.Serialization.Json;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Serialization;
@@ -96,12 +94,12 @@ namespace OOP14
             Console.WriteLine("\nXPath:");  //язык запросов к элементам XML-документа
             XmlDocument xDoc = new XmlDocument();
             xDoc.Load("books.xml");
-            XmlElement xRoot = xDoc.DocumentElement;    
+            XmlElement xRoot = xDoc.DocumentElement;
             Console.WriteLine("All nodes:");
             XmlNodeList all = xRoot.SelectNodes("*");   //выбирает все узлы
             foreach (XmlNode x in all)
             {
-                Console.WriteLine(x.OuterXml);         
+                Console.WriteLine(x.OuterXml);
             }
             Console.WriteLine("Several parts of the book:");
             XmlNodeList parts = xRoot.SelectNodes("Book");  //выбирает узлы Book
@@ -121,11 +119,11 @@ namespace OOP14
             bookstore.Add(bs_country_elem);
             bookstore.Add(bs_city_elem);
 
-            XElement bookstore2 = new XElement("bookstore");    
+            XElement bookstore2 = new XElement("bookstore");
             XAttribute bs2_name_attr = new XAttribute("name", "XLMedia");
             XElement bs2_country_elem = new XElement("country", "RU");
             XElement bs2_city_elem = new XElement("city", "Moscow");
-            bookstore2.Add(bs2_name_attr);          
+            bookstore2.Add(bs2_name_attr);
             bookstore2.Add(bs2_country_elem);
             bookstore2.Add(bs2_city_elem);
 

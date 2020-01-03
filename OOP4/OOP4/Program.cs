@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace OOP4
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             MyList.Owner owner = new MyList.Owner(12, "Mikhail", "BSTU");
             MyList.Date date = new MyList.Date();
             Console.WriteLine($"{date}\n");
 
-            MyList myList = new MyList() { "1", "25", "3" };
+            MyList myList = new MyList() { "1", "MAXWORD", "3" };
             MyList myList2 = new MyList() { "1", "2", "3" };
 
             Console.WriteLine(myList);
@@ -23,14 +23,14 @@ namespace OOP4
             myList = myList + (tmp, 1);
             Console.WriteLine(myList);
 
-            myList = myList >> 1;
+            myList = myList >> 1;   // перегрузка
             Console.WriteLine(myList);
 
             Console.WriteLine(myList != myList2);
 
-            Console.WriteLine($"Max word in list: { StatisticOperation.MaxWord(myList)}");
+            Console.WriteLine($"Max word in list: {myList.MaxWord()}");     // два метода расширения
 
-            Console.WriteLine($"Del last: {StatisticOperation.DelLast(myList)}\n");
+            Console.WriteLine($"Del last: {myList.DelLast()}\n");
 
             MyList myList3 = new MyList() { "abcd", "ac", "ery", "q" };
             Console.WriteLine(myList3);

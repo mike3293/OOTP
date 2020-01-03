@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP5
 {
-    sealed class Author : Person, IWrite
+    internal sealed class Author : Person, IWrite
     {
-        public Author(string name, int age, Book[] press):base(name, age)
+        public Author(string name, int age, Book[] press) : base(name, age)
         {
             Press = press;
         }

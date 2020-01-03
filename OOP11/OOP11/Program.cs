@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP11
 {
@@ -15,9 +13,9 @@ namespace OOP11
             Console.Write("Enter string length n:");
             n = int.Parse(Console.ReadLine());
             Console.WriteLine("1. Months with a string length of " + n + ":");
-            IEnumerable<string> length = months
-                .Where(p => (p.Length == n))
-                .Select(p => p);
+            IEnumerable<string> length = from m in months
+                                         where m.Length == n
+                                         select m;
             foreach (string month in length)
             {
                 Console.WriteLine(month);
@@ -26,8 +24,10 @@ namespace OOP11
 
             Console.WriteLine("2. Summer and winter months:");
             IEnumerable<string> sumwin = months
-                .Where(p => (p.Equals("December") || p.Equals("January") || p.Equals("February") || p.Equals("June") || p.Equals("July") || p.Equals("August")))
-                .Select(p => p);
+                .Where(m =>
+                m.Equals("December") || m.Equals("January") || m.Equals("February") ||
+                m.Equals("June") || m.Equals("July") || m.Equals("August")
+                );
             foreach (string month in sumwin)
             {
                 Console.WriteLine(month);
@@ -36,8 +36,7 @@ namespace OOP11
 
             Console.WriteLine("3. Months in alphabetical order:");
             IEnumerable<string> alph = months
-                .OrderBy(p => p)
-                .Select(p => p);
+                .OrderBy(m => m);
             foreach (string month in alph)
             {
                 Console.WriteLine(month);
@@ -46,8 +45,7 @@ namespace OOP11
 
             Console.WriteLine("4. Months containing a letter 'u' and a length >= 4:");
             IEnumerable<string> contU = months
-                .Where(p => (p.Contains('u') && p.Length >= 4))
-                .Select(p => p);
+                .Where(m => m.Contains('u') && m.Length >= 4);
             foreach (string month in contU)
             {
                 Console.WriteLine(month);
@@ -70,24 +68,28 @@ namespace OOP11
 
             List<Matrix> list = new List<Matrix> { mat1, mat2, mat3, mat4 };
 
-            int max = list.Max(p => p.matrix.Cast<int>().Sum());
+            //int max = list.Max(p => p.matrix.Cast<int>().Sum());
 
-            IEnumerable<Matrix> maxMatrix = list
-                .Where(p => p.matrix.Cast<int>().Sum() == max)
-                .Select(p => p);
+            //IEnumerable<Matrix> maxMatrix = list
+            //    .Where(p => p.matrix.Cast<int>().Sum() == max);
 
-            foreach (Matrix matrix in maxMatrix)
-            {
-                Console.WriteLine(matrix);
-            }
+            //Console.WriteLine("Max matrix:\n");
+            //foreach (Matrix matrix in maxMatrix)
+            //{
+            //    Console.WriteLine(matrix);
+            //}
 
-            IEnumerable<Matrix> N3 = list.Where(p => p.n == 3).Select(p => p);
-            Console.WriteLine("N3: ");
+            Matrix maxMatrix = list.Aggregate((m1, m2) =>
+                m1.matrix.Cast<int>().Sum() > m2.matrix.Cast<int>().Sum() ? m1 : m2);
+
+            Console.WriteLine("Max matrix:\n" + maxMatrix);
+
+            IEnumerable<Matrix> N3 = list.Where(p => p.n == 3);
+            Console.WriteLine("\nN3:\n");
             foreach (Matrix matrix in N3)
             {
                 Console.WriteLine(matrix);
             }
-
 
             Console.WriteLine("\n---------------------------------------------------\n");
 
